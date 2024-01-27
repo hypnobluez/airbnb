@@ -19,6 +19,65 @@ pickle-email-*.html
 
 # TODO Comment out this rule if you are OK with secrets being uploaded to the repo
 config/initializers/secret_token.rb
+
+# Ignore database configuration
+/config/database.yml
+
+# Ignore master key for Rails encrypted secrets
+/config/master.key
+
+# Ignore credentials file for Rails 6+
+/config/credentials.yml.enc
+
+# Ignore local environment variables
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# Ignore PostgreSQL database dump files
+*.dump
+
+# Ignore yarn files
+/yarn-error.log
+yarn-debug.log*
+.yarn-integrity
+
+# Ignore uploaded files in development
+/storage/*
+!/storage/.keep
+
+# Ignore public packs and assets
+/public/packs
+/public/packs-test
+/public/assets
+
+# Ignore node_modules
+/node_modules
+
+# Ignore pow environment settings
+.powenv
+
+# Ignore Byebug command history file
+.byebug_history
+
+# Ignore bower components
+/vendor/assets/bower_components
+*.bowerrc
+bower.json
+
+# Ignore Ruby version manager files
+.rvmrc
+.ruby-version
+.ruby-gemset
+
+# Ignore editor and IDE files
+.idea/
+.vscode/
+*.sublime-project
+*.sublime-workspace
+
 config/master.key
 
 # Only include if you have production secrets in this file, which is no longer a Rails default
@@ -135,5 +194,8 @@ yarn-debug.log*
 /storage/*
 !/storage/.keep
 /public/uploads
+/app/assets/builds/*
+!/app/assets/builds/.keep
+
 /app/assets/builds/*
 !/app/assets/builds/.keep
